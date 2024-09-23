@@ -131,13 +131,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var subject = document.getElementById('sub').value;
     var message = document.getElementById('message').value;
 
-    var mailtoLink = 'mailto:anki02062005email@gmail.com?subject=' + encodeURIComponent(subject) +
-                     '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone no. :' + phone + '\nMessage: ' + message);
+    var gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=anki02062005email@gmail.com&su=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone no. :' + phone + '\nMessage: ' + message);
 
-    try {
-        window.location.href = mailtoLink;
-    } catch (error) {
-        alert("No email client found. Please copy the following message and send it via your email service:");
-        alert('Name: ' + name + '\nEmail: ' + email + '\nPhone no. :' + phone + '\nMessage: ' + message);
-    }
+    window.open(gmailLink, '_blank');
 });
