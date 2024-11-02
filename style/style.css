@@ -1185,7 +1185,8 @@ textarea {
 }
 @media (max-width:390px){
     #services .box{
-        max-width: 250px;
+        max-width: 300px;
+        padding: 10px;
     }
     #services .container .box .head{
         font-size: 1em;
@@ -1198,7 +1199,7 @@ textarea {
         position: fixed;
     }
     #contact input{
-        width: 200px;
+        width: 300px;
     }
     .footer span{
         font-size: 12px;
@@ -1214,16 +1215,16 @@ textarea {
     }
     #about .details .info .topic{
         width: fit-content;
-        font-size: 14px;
+        font-size: 15px;
     }
     #about .details .info{
-        width: 200px;
+        width: 300px;
         height: fit-content;
         margin: 5px 0px;
         
     }
     #about .details .info .answer{
-        font-size: 13px;
+        font-size: 14px;
         margin-left: 5px;
     }
     /*  */
